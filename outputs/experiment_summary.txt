@@ -1,0 +1,47 @@
+MOBILE GAME A/B TEST - EXPERIMENT SUMMARY
+
+EXPERIMENT INFORMATION
+Control group: gate_30
+Treatment group: gate_40
+Total players: 90189
+Control players: 44700
+Treatment players: 45489
+Primary metric: retention_7
+Significance level: 0.05
+
+VALIDITY CHECKS
+Sample ratio mismatch p-value: 0.008608
+SRM verdict at 0.0005 threshold: PASS
+Records above 10000 game rounds: 1
+
+METRIC RESULTS
+             control_rate  treatment_rate  absolute_lift_pp  relative_lift_pct  ci_low_pp  ci_high_pp    pvalue  achieved_power  significant
+metric                                                                                                                                      
+retention_7      0.190201        0.182000           -0.8201            -4.3119    -1.3282     -0.3121  0.001554          0.8858         True
+retention_1      0.448188        0.442283           -0.5905            -1.3176    -1.2392      0.0582  0.074410          0.4303        False
+
+PRIMARY METRIC DETAIL
+Absolute lift: -0.8201pp
+Relative lift: -4.3119%
+95% CI: [-1.3282pp, -0.3121pp]
+z-test p-value: 0.001554
+Chi-square p-value: 0.001554
+Fisher exact p-value: 0.001591
+Permutation p-value: 0.001300
+Bayesian P(treatment better): 0.00076
+Achieved power: 0.8858
+
+MULTIPLE TESTING CORRECTION
+        metric                  test   pvalue  bonferroni_p  bonferroni_reject     bh_p  bh_reject
+   retention_7 two-proportion z-test 0.001554      0.004663               True 0.004663       True
+   retention_1 two-proportion z-test 0.074410      0.223229              False 0.111614      False
+sum_gamerounds          Welch t-test 0.375924      1.000000              False 0.375924      False
+
+PEEKING SIMULATION
+False positive rate at final look only: 0.0440
+False positive rate across 20 looks: 0.2580
+Inflation factor: 5.86x
+
+DECISION
+Do not ship gate_40
+Projected day-7 retained players lost per 100,000 installs: 820

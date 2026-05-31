@@ -1,0 +1,39 @@
+{
+  "control": "gate_30",
+  "treatment": "gate_40",
+  "alpha": 0.05,
+  "power_target": 0.8,
+  "n_control": 44700,
+  "n_treatment": 45489,
+  "srm_pvalue": 0.008607987810836262,
+  "metrics": {
+    "retention_7": {
+      "x_control": 8502,
+      "n_control": 44700,
+      "x_treatment": 8279,
+      "n_treatment": 45489,
+      "rate_control": 0.19020134228187918,
+      "rate_treatment": 0.18200004396667327,
+      "absolute_lift": -0.008201298315205913,
+      "relative_lift": -0.043119034896460184,
+      "ci_low": -0.013281552418885546,
+      "ci_high": -0.00312104421152628,
+      "pvalue": 0.001554249975614329,
+      "achieved_power": 0.8857696023365191
+    },
+    "retention_1": {
+      "x_control": 20034,
+      "n_control": 44700,
+      "x_treatment": 20119,
+      "n_treatment": 45489,
+      "rate_control": 0.4481879194630872,
+      "rate_treatment": 0.44228274967574577,
+      "absolute_lift": -0.005905169787341458,
+      "relative_lift": -0.01317565585974656,
+      "ci_low": -0.012392439449445219,
+      "ci_high": 0.0005820998747623034,
+      "pvalue": 0.07440965529691913,
+      "achieved_power": 0.43028578572010956
+    }
+  }
+}

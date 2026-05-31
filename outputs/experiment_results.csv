@@ -1,0 +1,3 @@
+metric,control_rate,treatment_rate,absolute_lift_pp,relative_lift_pct,ci_low_pp,ci_high_pp,pvalue,achieved_power,significant
+retention_7,0.190201,0.182,-0.8201,-4.3119,-1.3282,-0.3121,0.001554,0.8858,True
+retention_1,0.448188,0.442283,-0.5905,-1.3176,-1.2392,0.0582,0.07441,0.4303,False
