@@ -185,7 +185,7 @@ with tab2:
             {'test': 'Fisher exact test', 'statistic': round(result['odds_ratio'], 4),
              'pvalue': round(result['fisher_pvalue'], 6), 'significant': result['fisher_pvalue'] < ALPHA},
         ])
-        st.dataframe(test_table, hide_index=True, use_container_width=True)
+        st.dataframe(test_table, hide_index=True, width='stretch')
 
         st.write(f"95% CI on absolute lift: "
                  f"[{result['ci_low']*100:+.4f}pp, {result['ci_high']*100:+.4f}pp]")
@@ -241,7 +241,7 @@ with tab3:
                              'n_per_arm': int(np.ceil(n_required)),
                              'within_budget': int(np.ceil(n_required)) <= n_available})
 
-    st.dataframe(pd.DataFrame(planner_rows), hide_index=True, use_container_width=True)
+    st.dataframe(pd.DataFrame(planner_rows), hide_index=True, width='stretch')
 
     fig, ax = plt.subplots(figsize=(10, 4))
     planner_df = pd.DataFrame(planner_rows)
