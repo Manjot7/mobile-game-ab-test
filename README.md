@@ -8,6 +8,9 @@ The headline result is a clear negative: moving the gate to level 40 **reduces**
 at level 30. Five independent inference methods agree, and the result survives both a Bonferroni
 correction across all three tested metrics and a Pocock-adjusted boundary for repeated looks.
 
+
+**Live app:** [Streamlit Live App](https://mobile-game-ab-test.streamlit.app) — run the full inference suite, sample ratio mismatch check and sample size planner against your own two-arm conversion counts.
+
 ## Experiment design
 
 | | |
